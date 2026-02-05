@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AmplifyEase - AI-Powered Business Solutions</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <i class="fas fa-robot"></i>
+        <span>AmplifyEase</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Transform Your Business with AI</h1>
+      <p>Intelligent automation solutions that grow with your needs</p>
+      <div class="hero-buttons">
+        <button class="btn-primary">Get Started</button>
+        <button class="btn-secondary">Watch Demo</button>
+      </div>
+    </div>
+    <div class="hero-image">
+      <i class="fas fa-brain"></i>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <div class="container">
+      <h2>Powerful Features</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <i class="fas fa-chart-line"></i>
+          <h3>Analytics Dashboard</h3>
+          <p>Real-time insights and performance metrics</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Secure & Reliable</h3>
+          <p>Enterprise-grade security for your data</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-cogs"></i>
+          <h3>Smart Automation</h3>
+          <p>Intelligent workflows that save time</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-users"></i>
+          <h3>Team Collaboration</h3>
+          <p>Seamless integration with your tools</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>About AmplifyEase</h2>
+          <p>We're dedicated to helping businesses leverage the power of AI to streamline operations, improve efficiency, and drive growth. Our cutting-edge solutions are designed to scale with your business needs.</p>
+          <div class="stats">
+            <div class="stat">
+              <h3>500+</h3>
+              <p>Happy Clients</p>
+            </div>
+            <div class="stat">
+              <h3>99.9%</h3>
+              <p>Uptime</p>
+            </div>
+            <div class="stat">
+              <h3>24/7</h3>
+              <p>Support</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <i class="fas fa-rocket"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>AmplifyEase</h3>
+        <p>Your partner in AI-powered business transformation</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>Email: info@amplifyease.com</p>
+        <p>Phone: 1-800-AMPLIFY</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 AmplifyEase. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<div id="chat-button">
+  <i class="fas fa-comments"></i>
+  <span class="chat-badge">Chat with us!</span>
+</div>
+
+<div id="chat-widget" class="hidden">
+  <div id="chat-header">
+    <div class="header-content">
+      <i class="fas fa-robot"></i>
+      <span>AmplifyEase Assistant</span>
+      <span class="status"></span>
+    </div>
+    <button id="minimize-chat" class="minimize-btn">
+      <i class="fas fa-minus"></i>
+    </button>
+  </div>
+
+  <div id="chat-body"></div>
+
+  <div id="bot-options" class="bot-options-section">
+    <div class="options-title">Hello! 👋 I'm here to help you. What would you like to do today?</div>
+    <div class="options-grid">
+      <button class="option-btn" onclick="selectBotOption('ask_question')">
+        <i class="fas fa-question-circle"></i>
+        <span>Ask a Question</span>
+      </button>
+      <button class="option-btn" onclick="selectBotOption('contact_sales')">
+        <i class="fas fa-phone"></i>
+        <span>Contact Sales</span>
+      </button>
+      <button class="option-btn" onclick="selectBotOption('learn_more')">
+        <i class="fas fa-info-circle"></i>
+        <span>Learn More</span>
+      </button>
+    </div>
+  </div>
+
+  <div id="quick-options" class="hidden">
+    <button onclick="quickReply('pricing')">� Pricing</button>
+    <button onclick="quickReply('features')">✨ Features</button>
+    <button onclick="quickReply('security')">� Security</button>
+    <button onclick="quickReply('integrations')">� Integrations</button>
+    <button onclick="quickReply('free trial')">🎯 Free Trial</button>
+    <button onclick="quickReply('main_menu')">🏠 Main Menu</button>
+  </div>
+
+  <div id="chat-input-area">
+    <input type="text" id="user-input" placeholder="Type a message..." />
+    <button id="send-btn" onclick="sendMessage()">
+      <i class="fas fa-paper-plane"></i>
+    </button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
